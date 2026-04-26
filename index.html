@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>生日礼物</title>
+    <meta
+      name="description"
+      content="一个偏古风、温暖感的生日网页框架，适合后续替换文案和视频。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero-section">
+        <div class="hero-media-layer" aria-hidden="true">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="./2026%201%E6%9C%8830%E6%97%A5.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-glow"></div>
+        <div class="hero-watermark" aria-hidden="true">
+          <span>生</span>
+          <span>日</span>
+          <span>快</span>
+          <span>乐</span>
+        </div>
+        <div class="hero-copy">
+          <p class="hero-kicker">祝 忧郁s、椅子、你没急吧、飘渺火、鸦鸦-徐一苇</p>
+          <div class="hero-stage">
+            <h1 class="hero-title" aria-label="生日快乐">
+              <span>生</span>
+              <span>日</span>
+              <span>快</span>
+              <span>乐</span>
+            </h1>
+          </div>
+          <div class="hero-note-area">
+            <div class="hero-divider reveal-on-scroll" data-reveal-offset="0.72" aria-hidden="true"></div>
+            <div class="hero-subtitle reveal-on-scroll reveal-delayed" data-reveal-offset="0.78">
+              <p>
+                在好久以前聊天有提到送生日礼物这个话题。我感觉蛮好的，我以前也没做过这种事情，你是我在英国交得唯一一个朋友，还是很感激的。我觉得可以弄弄看。
+              </p>
+              <p>
+                但从那时候开始想到4月头还是想不出来应该送你一个什么样的生日礼物。想想我们一起经历最长的你也感兴趣的，也就永劫无间这个游戏了吧。这么久的时间你也变强了很多，干脆给你剪个集锦好了么。也算是记录一下吧。
+              </p>
+              <p>
+                其实在剪的时候一直感觉，剪视频给你有点蠢，但哥们确实是想不到啥东西了...
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="video-section section-full">
+          <div class="video-copy reveal-on-scroll">
+            <p class="video-title">永劫无间集锦</p>
+            <p class="video-text">
+              
+            </p>
+          </div>
+          <div class="video-frame reveal-on-scroll reveal-delayed">
+            <div class="video-overlay" aria-hidden="true">
+            </div>
+            <video controls preload="metadata" playsinline>
+                <source src="./4%E6%9C%8826%E6%97%A5/4%E6%9C%8826%E6%97%A5.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </section>
+
+        <section class="closing-section section">
+          <div class="section-heading">
+            <p class="section-index"></p>
+            <h2>还有一件事</h2>
+          </div>
+          <article class="closing-panel closing-panel-form reveal-on-scroll">
+            <div class="gift-question" data-gift-form>
+              <p class="panel-mark"></p>
+              <h3>选择你的皮肤</h3>
+              <p class="gift-note">
+                感觉就一个视频是不是没啥意思，要不在搞个皮肤，别整那些老贵的就行。
+              </p>
+              <label class="gift-input-wrap" for="skin-input">
+                <span class="sr-only">输入你想要的皮肤</span>
+                <textarea
+                  id="skin-input"
+                  class="gift-input"
+                  name="skin"
+                  rows="3"
+                  placeholder="在这里写你想要的皮肤"
+                ></textarea>
+              </label>
+              <button type="button" class="gift-submit" data-gift-submit>确认</button>
+            </div>
+            <div class="gift-result" data-gift-result hidden>
+              <p class="panel-mark">收到</p>
+              <h3 data-gift-result-text></h3>
+              <p class="gift-note">没做交互哈，截图发我</p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
