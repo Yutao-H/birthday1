@@ -325,14 +325,17 @@ body::after {
 }
 
 .video-text {
-  max-width: 420px;
+  flex: 0 1 560px;
+  max-width: 560px;
   margin: 0;
   padding: 0;
   background: transparent;
   border: 0;
   color: var(--text-dim);
-  line-height: 1.8;
+  font-size: clamp(0.78rem, 0.86vw, 0.92rem);
+  line-height: 1.6;
   text-align: right;
+  white-space: nowrap;
 }
 
 .closing-grid {
@@ -560,8 +563,10 @@ body::after {
   }
 
   .video-text {
+    flex: 0 1 auto;
     max-width: 100%;
     text-align: left;
+    white-space: normal;
   }
 }
 
